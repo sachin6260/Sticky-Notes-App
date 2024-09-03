@@ -1,0 +1,163 @@
+/* index.css */
+
+/* Container for the app */
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc); /* Gradient background */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Main title */
+h1 {
+  color: #333;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+ .search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #ffffff; /* White background for the search bar */
+  border-radius: 12px; /* Rounded corners for the search bar */
+  padding: 8px 20px; /* Adequate padding for a better layout */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly more pronounced shadow */
+  border: 1px solid #ddd; /* Light border to define the search bar */
+}
+
+/* Search input styling */
+.search-bar input {
+  flex: 1; /* Take up remaining space */
+  padding: 12px; /* Increased padding for better readability */
+  border-radius: 12px; /* Match the search bar's rounded corners */
+  border: none; /* Remove default border */
+  outline: none; /* Remove default outline */
+  font-size: 1rem; /* Consistent font size */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus */
+}
+
+  
+
+
+/* Note input section */
+/* Note input container */
+.note-input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between textarea and button */
+  margin-bottom: 20px;
+}
+
+/* Textarea for note input */
+.note-input textarea {
+  width: 97%; /* Full width of the container */
+  padding: 15px; /* Adequate padding for better text readability */
+  border-radius: 12px; /* Rounded corners */
+  border: 1px solid #ddd; /* Light border for definition */
+  outline: none; /* Remove default outline */
+  font-size: 1rem; /* Consistent font size */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus */
+}
+
+/* Focus state for textarea */
+.note-input textarea:focus {
+  border-color: #007bff; /* Highlight border color on focus */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Light blue shadow for focus indication */
+}
+
+/* Button styling */
+.note-input button {
+  align-self: flex-end; /* Align button to the end of the container */
+  padding: 12px 20px; /* Padding for better clickability */
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Text color for button */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Consistent font size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover state for button */
+.note-input button:hover {
+  background-color: #0056b3; /* Darker shade for button hover */
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Notes grid layout */
+/* index.css */
+
+/* Notes grid styling */
+.notes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between notes */
+  justify-content: center; /* Center notes in the container */
+}
+
+/* Note styling */
+.note {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  width: calc(33.33% - 20px); /* Adjust for 3 columns with gap */
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.note.pinned {
+  border-left: 8px solid #ff69b4; /* Pink border for pinned notes */
+}
+
+.note p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Note actions styling */
+.note-actions {
+  display: flex;
+  gap: 15px; /* Space between action icons */
+  margin-top: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Icon color and styling */
+.note-actions .fa-icon {
+  font-size: 1.2rem; /* Icon size */
+  color: #007bff; /* Blue color for icons */
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.note-actions .fa-icon:hover {
+  color: #0056b3; /* Darker blue color on hover */
+  transform: scale(1.1);
+}
+
+/* Specific icon colors */
+.note-actions .fa-edit {
+  color: #28a745; /* Green color for edit icon */
+}
+
+.note-actions .fa-trash {
+  color: #dc3545; /* Red color for delete icon */
+}
+
+.note-actions .fa-thumbtack {
+  color: #ffc107; /* Yellow color for pin icon */
+}
+
+/* Optional: Add spacing to top if you want space between text and actions */
+.note p {
+  margin-bottom: 10px;
+}
